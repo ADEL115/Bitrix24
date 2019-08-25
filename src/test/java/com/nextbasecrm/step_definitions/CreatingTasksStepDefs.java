@@ -11,10 +11,9 @@ import cucumber.api.java.en.When;
 
 public class CreatingTasksStepDefs {
 
-    @When("I click on Tasks")
-    public void i_click_on_Tasks() {
-        new TasksPage().selectTab("Tasks");
-
+    @When("I click on {string}")
+    public void i_click_on_Tasks(String module) {
+        new TasksPage().selectTab(module);
     }
 
     @Then("I should be able to create new task")
