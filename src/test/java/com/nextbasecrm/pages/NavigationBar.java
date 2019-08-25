@@ -15,7 +15,7 @@ public abstract class NavigationBar {
         WebElement module = Driver.get().findElement(By.xpath(xpath));
         BrowserUtils.highlight(module);
         module.click();
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(2);
 
     }
 

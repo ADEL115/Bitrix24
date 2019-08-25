@@ -14,7 +14,6 @@ Feature:
     And I should be able to add "link"
     And I should be able to add "checklist"
 
-  @wip
   Scenario: Verify that user should be able to set up a deadline for new task
     Given I login as "hr"
     When I click on Tasks
